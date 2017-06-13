@@ -2,21 +2,21 @@
     <head>
         <title></title>
         <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
-        <script src="/build.js"></script>
-        <script src="/components/audioanalyser-levels-scale.js"></script>
-        <script src="/components/aframe-sun-sky.js"></script>
-        <script src="/components/aframe-randomizer-components.js"></script>
+        <script src="build.js"></script>
+        <script src="components/audioanalyser-levels-scale.js"></script>
+        <script src="components/aframe-sun-sky.js"></script>
+        <script src="components/aframe-randomizer-components.js"></script>
   </head>
   <body>
     <a-scene antialias="true">
 
         <a-assets>
             <a-mixin id="billboard"
-                obj-model="obj: url(/models/billboard/billboard.obj); mtl: url(/models/billboard/billboard.mtl)"
+                obj-model="obj: url(models/billboard/billboard.obj); mtl: url(models/billboard/billboard.mtl)"
                 rotation="-90 0 0"
             ></a-mixin>
-            <a-asset-item id="treeLine-obj" src="/models/treeLine/treeLine.obj"></a-asset-item>
-            <a-asset-item id="treeLine-mtl" src="/models/treeLine/treeLine.mtl"></a-asset-item>
+            <a-asset-item id="treeLine-obj" src="models/treeLine/treeLine.obj"></a-asset-item>
+            <a-asset-item id="treeLine-mtl" src="models/treeLine/treeLine.mtl"></a-asset-item>
             <a-mixin id="trees"
                 obj-model="obj: #treeLine-obj; mtl: #treeLine-mtl"
                 rotation="0 90 0"
